@@ -1,0 +1,87 @@
+body{
+    background: #F1F1F1;
+}
+.container{
+background: #F1F1F1;
+display: flex;
+}
+.info{
+    position: relative;
+    width: 50%;
+    height: 98vh;
+}
+.photo{
+    width: 50%;
+    height: 98vh;
+    background: url(../images/home.jpg);
+    background-size: cover;
+    background-position: center center; /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
+    background-repeat: no-repeat; /* Para que la imagen de fondo no se repita */
+}
+.logo img{
+    width: 200px;
+    height: 100px;
+    padding-bottom: 6%;
+}
+.bHome{
+    width: 310px;
+    height: 50px;
+    background: #FFFCFC;
+    border: 3px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 20px;
+}
+.titles{
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 14px;
+    letter-spacing: 0.15em;
+    color: #000000;
+}
+.subtitles{
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.adittional{
+    font-family: Miama;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    padding-top: 3%;
+}
+
+
+
+.log img{
+    width: 200px;
+    height: 100px;
+}
+.containerCard{
+   justify-content: space-evenly;
+    width: 100%;
+    display: flex;
+    max-width: 90%;
+    /*align-items: center;*/
+}
+.containerCard img{
+    border: 1px solid rgba(0, 0, 0, 0.54);
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 358px;
+    height: 340px;
+}
+.containerCard img:hover{
+    box-shadow: 5px 5px 20px rgb(0,0,0,0.4);
+    transform: translateY(-3%);
+}
