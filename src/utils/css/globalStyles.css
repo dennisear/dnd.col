@@ -1,0 +1,143 @@
+/* -------------------- Header styles for the entire website -------------------- */
+body{
+    background: #C4C4C4;
+}
+.header{
+    width: 100%;
+    height: 30px;
+    background: #C4C4C4;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+}
+.icons img{
+    height: 25px;
+}
+.headerMenu{
+    width: 100%;
+    background: #F1F1F1; 
+    height: 60px;
+}
+#btn-menu{
+    display: none;
+}
+.headerMenu label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border:2px solid white;  
+}
+.menu ul{
+    margin: 0;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu li:hover{
+    background: #C4C4C4;    
+}
+.logo img{
+    width: 100px;
+    height: 60px;
+}
+.socialmedia img{
+    width: 60px;
+    height: 60px;
+    padding-top: 20%;
+}
+ul, li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.men{
+    display: flex;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+}
+.preFooter{
+    display: flex;
+    background: #F1F1F1;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+}
+.infoPreF{
+    padding-left: 30%;
+}
+.fab{
+    padding: 1%;
+    width: 50px;
+}
+footer{
+    font-family: Work Sans;
+    font-style: ligth;
+    font-weight: 600;
+    
+
+}
+/* Definimos las transiciones */
+.navbar-form .form-control[type=text] {
+    background: transparent;
+    display:inline-block;
+    transition: all .5s;
+    border-radius: 15px;
+    border: solid 2px black;
+}
+/* Al situar el puntero en el campo de búsqueda este cambia su color de fondo a blanco, el color de la letra, el borde y la sombra */
+.navbar-form .form-control[type=text]:focus {
+    background-color: #fff;
+    border: solid 2px black;
+    border-radius: 15px;
+    color:#333;
+    -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+.btn {
+    background: transparent;
+
+}
+
+
+
+
+
+
+
+
+
+/* ---------- Responsive design ---------- */
+/*Menu on smartphones/tablets*/
+@media only screen and (max-width:768px){
+    .headerMenu label{
+        display: block;
+        margin-left: 90%;
+    }
+    .menu{
+        position: absolute;
+        background: #C4C4C4;    
+        width: 95%;
+        margin-left: -100%;
+        text-align: center;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 2px solid #A7AA0B;
+        padding: 2% 1% 1% 2%;
+    }
+  
+    #btn-menu:checked ~ .menu{
+       margin: 0;
+    }
+} 
+/* Para pantallas grandes hacemos que el formulario se despliegue con amplitud ya que disponemos de espacio en la barra de navegación, la busqueda se ejecuta con intro o pinchando en el icono de la lupa */
+@media (min-width:1200px) {
+    .navbar-form input.form-control[type=text] { width: 160px; }
+    .navbar-form input.form-control[type=text]:focus { width: 350px; }
+}

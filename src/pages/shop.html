@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../utils/css/globalStyles.css">
+    <link rel="stylesheet" href="../utils/css/shop.css">
+    <link rel="shortcut icon" href="../utils/images/favicon.ico" />
+    <script src="https://kit.fontawesome.com/ab487a9db9.js" crossorigin="anonymous"></script>
+   
+    <title> Shop | DND.COL</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <p>Envíos para toda Colombia, contraentrega en Bogotá y Soacha</p>
+        </header>
+        <div class="men">
+            <div class="logo">
+                <a href="../../index.html"><img src="../utils/images/logo.jpg"></a>                
+            </div>
+            <div class="headerMenu">
+                <input type="checkbox" id="btn-menu">
+                <label for="btn-menu"><i class="fas fa-bars"></i> </label>
+                <nav class="menu">
+                    <ul>
+                        <li onclick="location.href='#'"> INICIO</li>
+                        <li onclick="location.href='../../src/pages/clothing/main.html'"> CLOTHING</li>
+                        <li onclick="location.href='../../src/pages/makeup.html'"> MAKEUP</li>
+                        <li onclick="location.href='#'"> 
+                            <form class="form-search content-search navbar-form" action="" method="post">
+                                <div class="input-group">
+                                    <input class="form-control form-text" type="text" size="15" maxlength="128" />
+                                    <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                                    </span>
+                                </div>
+                            </form>                      
+                        </li>
+                        <li onclick="changeIn_QS()"> <img src="../utils/images/user.png" width="25px" height="25px"></li>
+                        <li onclick="changeIn_QS()"> <img src="../utils/images/fav.png"  class="icons" width="25px" height="25px"></li>
+                        <li onclick="changeIn_QS()"> <img src="../utils/images/carrito.png"  class="icons"  width="25px" height="25px"></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+
+    <div class="banner">
+        <div class="photos">
+            <img src="../utils/images/banner1.png" width="200px">
+            <img src="../utils/images/banner2.png" width="250px">
+        </div>
+        <div class="infoSale">
+            <p class="reg">Obtén</p>
+            <p class="bol">10% de descuento*</p>
+            <p class="reg">para tu primera compra y</p>
+            <p class="bol">envío gratis*</p>
+            <p class="reg">para tu segunda compra</p>
+            <p class="sma">*Válido solo para compras por sitio web</p>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Tabs -->
+    <section class="tabs">
+        <div class="container">
+            <div id="tab-1" class="tab-item">
+                <img src="../utils/images/maquillaje.png">               
+                <p class="hide-sm">Makeup</p>
+            </div>
+            <div id="tab-2" class="tab-item">
+                <img src="../utils/images/fashion.png">
+                <p class="hide-sm">Clothing</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tab-content">
+        <div class="container">
+            <!-- Tab Content 1 -->
+            <div id="tab-1-content" class="tab-content-item show">
+                <div id="tab-1-content-inner">
+                    <p>Hola, soy makeupjahgvsghavsgha</p>
+                </div>
+            </div>
+
+            <!-- Tab Content 2 -->
+            <div id="tab-2-content" class="tab-content-item">
+                <div id="tab-2-content-top" class="text-center text-white">
+                    <p class="text-lg">Elige un plan y mira todo en Netflix.</p>   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <p>Nuestros clientes</p>     
+        <div class="grid-gallery">
+            <a class="grid-gallery__item" href="#">
+                <img class="grid-gallery__image" src="../utils/images/1.jpg">
+            </a>
+            <a class="grid-gallery__item" href="#">
+                <img class="grid-gallery__image" src="../utils/images/2.jpg">
+            </a>
+            <a class="grid-gallery__item" href="#">
+                <img class="grid-gallery__image" src="../utils/images/3.jpg">
+            </a>
+            <a class="grid-gallery__item" href="#">
+                <img class="grid-gallery__image" src="../utils/images/4.jpg">
+            </a>
+            <a class="grid-gallery__item" href="#">
+                <img class="grid-gallery__image" src="../utils/images/5.jpg">
+            </a>
+            <a class="grid-gallery__item" href="#">
+                <img class="grid-gallery__image" src="../utils/images/6.jpg">
+            </a>
+            <a class="grid-gallery__item" href="#">
+                <img class="grid-gallery__image" src="../utils/images/7.jpg">
+            </a>
+            <a class="grid-gallery__item" href="#">
+                <img class="grid-gallery__image" src="../utils/images/8.jpg">
+            </a>
+            <a class="grid-gallery__item" href="#">
+                <img class="grid-gallery__image" src="../utils/images/9.jpg">
+            </a>
+            <a class="grid-gallery__item" href="#">
+                <img class="grid-gallery__image" src="../utils/images/10.jpg">
+            </a>
+            <a class="grid-gallery__item" href="#">
+                <img class="grid-gallery__image" src="../utils/images/11.jpg">
+            </a>
+            <a class="grid-gallery__item" href="#">
+                <img class="grid-gallery__image" src="../utils/images/12.jpg">
+            </a>
+            <a class="grid-gallery__item" href="#">
+                <img class="grid-gallery__image" src="../utils/images/13.jpg">
+            </a>
+            <a class="grid-gallery__item" href="#">
+                <img class="grid-gallery__image" src="../utils/images/14.jpg">
+            </a>
+            <a class="grid-gallery__item" href="#">
+                <img class="grid-gallery__image" src="../utils/images/15.jpg">
+            </a>         
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="menuPol">
+        <nav class="menuPYA">
+            <ul>
+                <li id="but1" onclick="anim1()" > Políticas de venta</li>
+                <li id="but2" onclick="anim2()" > Políticas de envío</li>
+                <li id="but3" onclick="anim3()" > Políticas de cambios y garantías</li>
+                <li id="but4" onclick="anim4()" > Preguntas frecuentes</li>            
+            </ul>
+        </nav>
+        <div class="banner"></div>
+
+        <div class="main-container">
+            <div class="list-container">
+                <div class="item">
+                    <!----------------ACCORDION FIRST OPTION---------------->
+                    <p id="pa" class="btn-item" onclick="men(1)">Políticas de venta</p>
+                    <div class="item-content">
+
+                    </div>
+                </div>
+                <div class="item">
+                    <!----------------ACCORDION SECOND OPTION---------------->
+                    <p id="bro" class="btn-item" onclick="men(2)">Políticas de envío</p>
+                    <div class="item-content">
+
+                    </div>
+                </div>
+                <div class="item">
+                    <!----------------ACCORDION THIRD OPTION---------------->
+                    <p id="bon" class="btn-item" onclick="men(3)">Políticas de cambios y garantías</p>
+                    <div class="item-content">
+                        <p>Para nosotros es muy importante que quedes satisfecho y feliz con nuestros productos así que por ello nuestro control de calidad es muy exhaustivo, para garantizar la mejor experiencia cuando recibas un paquete de DND.COL.
+                        A continuación, encontrarás las políticas que deberás tener presente, en caso de que requieras iniciar un trámite de cambio, garantía o retracto.</p>
+                        <ol id="lista3">
+                            <li>Cambios</br>Para realizar un cambio tenemos unas reglas claves que debes tener en cuenta:
+                                <p>VIGENCIA:
+                                    Este trámite se podrá realizar únicamente durante el (1) primer día hábil siguiente al recibo del paquete. Es decir, si recibes tu pedido de lunes a viernes el primer día hábil será el lunes (si no es festivo) y así sucesivamente.
+                                </p>
+                                <p>
+                                    CONDICIÓN: Es indispensable que se garantice la integridad del producto; solo se podrá iniciar el trámite de cambio, cuando: <br/> • Los productos no presentan rastros de haber sido usados, cuentan con las etiquetas intactas, están en un estado de limpieza impecable y la caja y los accesorios se encuentran en perfecto estado. </br> • Debes mostrar la factura a través de WhatsApp o correo electrónico.</br> • Este trámite no aplica DEVOLUCIÓN DE DINERO, se cambiará por otro producto de igual valor o en su efecto si el valor del producto por el cual solicita el cambio es superior el cliente deberá pagar la diferencia entre el nuevo producto y el anterior.
+                                </p>
+                                <p>
+                                    FLETES: Los costos de los fletes en el caso de un cambio correrán por cuenta del cliente y el embalaje deberá garantizar que el producto se reciba en perfectas condiciones protegiéndolo con cajas de cartón, papel burbuja, vinypel para evitar daños o averías en el transporte.
+                                </p>
+                            </li>
+                            <li> GARANTÍA:
+                                <p>VIGENCIA: Garantía de 30 días calendario en nuestros productos, este proceso de garantía se rige por la LEY 1480 DE 2011, ARTÍCULO 16 Cubrimos defectos de Fábrica del producto.</p>
+                                <p>CONDICIÓN: Para hacer efectiva la garantía el producto debe contar con su caja, empaques, accesorios y factura o documento equivalente y que se encuentre dentro del periodo de garantía ofrecido (30 días calendario). Este trámite no aplica DEVOLUCIÓN DE DINERO.</p>
+                            </li>
+                            <li>List item
+                                
+                            </li> 
+                        </ol>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <!----------------ACCORDION FOURTH OPTION---------------->
+                    <p id="cs" class="btn-item" onclick="men(4)">Preguntas frecuentes</p>
+                    <div class="item-content">
+
+                    </div>
+                </div>
+            </div> <!----------------CLOSE "LIST-CONTAINER"---------------->
+        </div> <!----------------CLOSE "MAIN-CONTAINER"---------------->
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="preFooter">
+        <div class="logo">
+            <a href="../../index.html"><img src="../utils/images/logo.jpg"></a>                
+        </div>
+        <div class="infoPreF" align="center">¡Somos tienda virtual! Nuestra bodega está ubicada en la ciudad de Bogotá. </br> Encuéntranos en la web: </br><a href="#"><i class="fab fa-instagram-square"></i></a><a href="#"><i class="fab fa-whatsapp-square"></i></a><a href="#"><i class="fab fa-whatsapp-square"></i></a><a href="#"><i class="fas fa-envelope-square"></i></a></div>
+
+    </div>
+
+    <footer align="center">Copyright 2022 © DND.COL | Todos los derechos reservados - Diseño y desarrollo de sitios Web por <a href="#">dennisear</a></footer>
+<script src="../utils/js/shop.js"></script>
+</body>
+</html>
